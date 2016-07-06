@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form
+    class="myform"
+    action="#" method="get">
+
+    <input
+    autocomplete="on"
+    type="text" name="name" value="">
+    <input
+    required
+    autocomplete="off"
+    maxlength="10"
+    size="15"
+    placeholder="Address"
+    type="text" name="address" value="">
+
+    <input readonly
+    type="text" name="age" value="15">
+    <br>
+
+
+    <input
+    type="submit" formaction="/formsubmit"
+    name="name" value="Submit">
+
+    <input checked type="radio" name="fruit" value="mango">Mango</input>
+    <input type="radio" name="fruit" value="apple">Apple</input>
+    <input checked type="radio" name="fruit" value="berry">Berry</input>
+    <input type="radio" name="fruit" value="pineapple">Pineapple</input>
+<br>
+    <input checked type="checkbox" name="vehicle" value="car">Car</input>
+    <input disabled type="checkbox" name="vehicle" value="truck">Truck</input>
+    <input checked type="checkbox" name="vehicle" value="bus">Bus</input>
+    <input type="checkbox" name="vehicle" value="bike">Bike</input>
+
+    <br>
+    <br>
+
+    <input type="submit" name="name" value="Submit">
+<br>
+    <select multiple="true" name="courses">
+      <option>Pandora</option>
+      <option selected >Elixir</option>
+      <option>Launchpad</option>
+      <option>Crux</option>
+
+      <br><br>
+
+      <textarea name="name" wrap="soft" rows="3" cols="10"></textarea>
+
+    </select>
+
+    <input disabled type="button" name="btnone" value="Button One">
+    <input type="button" name="btntwo" value="Button Two">
+    </form>
+
+    <input type="number" step="4" name="year" value="">
+
+    <a title="open a page" href="attributes.html" target="frame_one">
+      Open in frame
+    </a>
+
+    <iframe
+    title="another page"
+    scrolling="no"
+    frameborder="no"
+    name="frame_one"
+    src="index.html"
+    width="200"
+    height="200"></iframe>
+
+
+
+
+
+  </body>
+</html>
