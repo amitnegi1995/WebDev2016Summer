@@ -17,7 +17,7 @@ console.log(mango.taste);
 console.log(apple.color);
 console.log(apple.taste);
 
-function giveCallbackFunc(cb) {
+function giveCallbackFuncAsync(cb) {
     let i = 0;
     while (i<9999999) {
         i++
@@ -25,10 +25,18 @@ function giveCallbackFunc(cb) {
     cb();
 }
 
-giveCallbackFunc(function () {
+setTimeout( function() {
+  giveCallbackFuncAsync(function () {
     console.log('one')
 });
+},0);
+
 console.log('continue');
-giveCallbackFunc(function () {
+
+setTimeout( function() {
+  giveCallbackFuncAsync(function () {
     console.log('two')
 });
+},0);
+
+console.log("end");
