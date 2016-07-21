@@ -1,0 +1,33 @@
+@keyframes bounce {
+    0% { transform: translateY(0px)}
+    50% { transform: translateY(300px)}
+    100% { transform: translateY(0px)}
+}
+
+#canvas {
+    height: 400px;
+    width: 600px;
+    background-color: azure;
+}
+
+.enemy {
+    margin: 40px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: brown;
+    animation: bounce;
+    animation-iteration-count: infinite;
+}
+.two {
+    animation-duration: 2s;
+}
+.three {
+    animation-duration: 3s;
+}
+.four {
+    animation-duration: 4s;
+}
+.five {
+    animation-duration: 5s;
+}
