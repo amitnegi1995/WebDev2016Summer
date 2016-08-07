@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+Distance : <input id="dist" type="number">
+<br>
+Time : <input id="time" type="number">
+<br>
+<button id="calcfare">Calculate</button>
+<br>
+<span id="fare"></span>
+
+<script>
+    $(function () {
+        $('#calcfare').click(function () {
+            var dist = $('#dist').val();
+            var time = $('#time').val();
+            $.get('/calculate?dist=' + dist + '&time=' + time,
+                    function (data, status) {
+                        $('#fare').html(data.fare)
+                    }
+            )
+        })
+    })
+</script>
+
+</body>
+</html>
